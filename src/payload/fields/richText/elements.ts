@@ -11,6 +11,7 @@ const elements: RichTextElement[] = [
   'h5',
   'h6',
   'link',
+  'upload',
   largeBody,
   label,
 ]

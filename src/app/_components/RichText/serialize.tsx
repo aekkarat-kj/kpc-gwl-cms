@@ -82,6 +82,8 @@ const serialize = (children?: Children): React.ReactNode[] =>
         return <ol key={i}>{serialize(node.children)}</ol>
       case 'li':
         return <li key={i}>{serialize(node.children)}</li>
+      case 'upload':
+        return <img src={node.value.url} alt={node.value.url} key={i} />
       case 'link':
         return (
           <CMSLink

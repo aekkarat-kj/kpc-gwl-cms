@@ -5,6 +5,7 @@ import { Archive } from '../../blocks/ArchiveBlock'
 import { CallToAction } from '../../blocks/CallToAction'
 import { Content } from '../../blocks/Content'
 import { MediaBlock } from '../../blocks/MediaBlock'
+import { ProductCard } from '../../blocks/ProductCard'
 import { slugField } from '../../fields/slug'
 import { populateArchiveBlock } from '../../hooks/populateArchiveBlock'
 import { checkUserPurchases } from './access/checkUserPurchases'
@@ -75,7 +76,7 @@ const Products: CollectionConfig = {
               name: 'layout',
               type: 'blocks',
               required: true,
-              blocks: [CallToAction, Content, MediaBlock, Archive],
+              blocks: [CallToAction, Content, MediaBlock, Archive, ProductCard],
             },
           ],
         },
